@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://i.imgur.com/QpJ2cYq.png" alt="Azure logo"/>
+  <img src="https://logo.svgcdn.com/l/microsoft-azure.svg" alt="Microsoft Azure Logo" width="150"/>
 </p>
 
 <h1>Azure Website Deployment & DevTest Lab Project</h1>

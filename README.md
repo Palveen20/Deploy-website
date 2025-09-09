@@ -73,11 +73,13 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
 <p>Cloud version of SQL Server for structured data.</p>
 <div class="example"><strong>Example:</strong> Online store keeping track of products and orders.</div>
 
-<img src="images/azure-pricing-calculator.png" alt="Azure Pricing Calculator">
+<img src="<img width="975" height="530" alt="image" src="https://github.com/user-attachments/assets/ebc49cb2-d153-4881-8850-0907dfb4c4ed" />
+" alt="Azure Pricing Calculator">
 
 <h3>Step 2: Sign in to Azure</h3>
 <p>Sign in with your triOS student ID at <a href="https://portal.azure.com" target="_blank">Azure Portal</a></p>
-<img src="images/azure-sign-in.png" alt="Azure Sign-in">
+<img src="<img width="975" height="524" alt="image" src="https://github.com/user-attachments/assets/2bf6ef1c-3b97-4ee8-aaf3-225623d4b8ec" />
+" alt="Azure Sign-in">
 
 <h3>Step 3: Create Resource Groups and Virtual Machines</h3>
 
@@ -92,7 +94,8 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Disk: Standard SSD</li>
     <li>Networking/Management/Monitoring: Default</li>
 </ul>
-<img src="images/canada-vm.png" alt="Canada VMs">
+<img src="<img width="975" height="531" alt="image" src="https://github.com/user-attachments/assets/edd2d685-48d9-46ef-a43f-7de7394d85a9" />
+" alt="Canada VMs">
 
 <h4>U.S. Region VMs</h4>
 <ul>
@@ -105,7 +108,8 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Disk: Standard SSD</li>
     <li>Networking/Management/Monitoring: Default</li>
 </ul>
-<img src="images/us-vm.png" alt="US VMs">
+<img src="<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/cad3bbbd-6d54-4f9e-bad8-4cf63fff0c05" />
+" alt="US VMs">
 
 <h3>Step 4: Configure the Servers</h3>
 
@@ -115,11 +119,15 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Open firewall for HTTP port 80</li>
     <li>Connect using SSH (PuTTY)</li>
     <li>Install Apache</li>
+   <img src="<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/e78d6c08-dcbc-4f83-ac6a-aee0736f2bff" />
+" alt="Install Apache">
     <li>Create a webpage with your name and student ID (text red)</li>
     <li>Open firewall for HTTPS port 443</li>
 </ul>
-<img src="images/canada-server-config.png" alt="Canada Server Configuration">
-
+<img src="<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/f691e1e7-5619-44e3-905f-b10e46732bc6" />
+" alt="Canada Server Configuration">
+<img src="<img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/cab5d8c3-904f-479f-83a5-52032fb4efef" />
+" alt="Install putty and connect">
 <h4>U.S. Servers</h4>
 <ul>
     <li>Note Public IP addresses</li>

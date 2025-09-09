@@ -78,7 +78,7 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
 
 <h3>Step 2: Sign in to Azure</h3>
 <p>Sign in with your triOS student ID at <a href="https://portal.azure.com" target="_blank">Azure Portal</a></p>
-<img src="<img width="975" height="524" alt="image" src="https://github.com/user-attachments/assets/2bf6ef1c-3b97-4ee8-aaf3-225623d4b8ec" />
+<img width="975" height="524" alt="image" src="https://github.com/user-attachments/assets/ba613e33-84d9-4937-a2a6-3ab278df648e" />
 " alt="Azure Sign-in">
 
 <h3>Step 3: Create Resource Groups and Virtual Machines</h3>
@@ -94,7 +94,8 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Disk: Standard SSD</li>
     <li>Networking/Management/Monitoring: Default</li>
 </ul>
-<img src="<img width="975" height="531" alt="image" src="https://github.com/user-attachments/assets/edd2d685-48d9-46ef-a43f-7de7394d85a9" />
+<img width="975" height="531" alt="image" src="https://github.com/user-attachments/assets/08711d96-bb59-4f3d-8b5b-b24d38afbb3e" />
+
 " alt="Canada VMs">
 
 <h4>U.S. Region VMs</h4>
@@ -108,7 +109,8 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Disk: Standard SSD</li>
     <li>Networking/Management/Monitoring: Default</li>
 </ul>
-<img src="<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/cad3bbbd-6d54-4f9e-bad8-4cf63fff0c05" />
+<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/0dc4c45a-fec2-44fa-abec-b93302f63797" />
+
 " alt="US VMs">
 
 <h3>Step 4: Configure the Servers</h3>
@@ -117,27 +119,48 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
 <ul>
     <li>Note Public IP addresses</li>
     <li>Open firewall for HTTP port 80</li>
+  <img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/abd3cb02-f883-4ab5-8df5-5ae17c62eb8d" />
+  " alt="Firewall http 80">
     <li>Connect using SSH (PuTTY)</li>
     <li>Install Apache</li>
-   <img src="<img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/e78d6c08-dcbc-4f83-ac6a-aee0736f2bff" />
+   <img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/783389b8-48d0-4680-994b-22d94ac6985c" />
+
 " alt="Install Apache">
     <li>Create a webpage with your name and student ID (text red)</li>
-    <li>Open firewall for HTTPS port 443</li>
+    <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/0c6547c5-8498-4561-95a2-7151f818f2a5" />
+    <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/09f200b4-bc9c-4e54-9cd9-452e0e4641f8" />
+     <li>Refresh the webpage in your web browser and provide the result.</li>
+     <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/1b19386c-91b5-467f-a522-9eaa37dbccf9" />
+     <li>Open firewall for HTTPS port 443.</li>
+     <img width="975" height="529" alt="image" src="https://github.com/user-attachments/assets/193298d1-c498-4ebe-b79c-de6d0d16b066" />
+    <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/96d7829f-b93c-40ac-80e0-3a12a380ceef" />
+
+
 </ul>
-<img src="<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/f691e1e7-5619-44e3-905f-b10e46732bc6" />
-" alt="Canada Server Configuration">
-<img src="<img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/cab5d8c3-904f-479f-83a5-52032fb4efef" />
-" alt="Install putty and connect">
+
 <h4>U.S. Servers</h4>
 <ul>
     <li>Note Public IP addresses</li>
+  <img width="975" height="531" alt="image" src="https://github.com/user-attachments/assets/86674600-ad7a-4dcb-9559-41c98a9fd831" />
+
     <li>Open firewall for HTTP port 80</li>
+  <img width="975" height="527" alt="image" src="https://github.com/user-attachments/assets/f465e088-c171-45f8-a63e-228d3d65981b" />
+
     <li>Connect using SSH (PuTTY)</li>
+   <img width="975" height="528" alt="image" src="https://github.com/user-attachments/assets/736f0832-073f-4a1c-b07e-0c339ef69a66" />
+
     <li>Install Apache</li>
+  <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/c46aaad6-db45-4e3d-8d03-cd03af63c067" />
+
     <li>Create a webpage with your name and student ID (text green)</li>
+  <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/4f10f73d-a81f-4cea-9ebb-93b8eee89e8f" />
+    <li>Refresh the webpage in your web browser and provide the result.</li>
+    <img width="975" height="548" alt="image" src="https://github.com/user-attachments/assets/314bd99d-b8fe-4fb3-8cda-03eccbd3d0a6" />
+
     <li>Open firewall for HTTPS port 443</li>
+  <img width="975" height="530" alt="image" src="https://github.com/user-attachments/assets/1d231050-3196-4e3c-90af-726b51f47a48" />
+
 </ul>
-<img src="images/us-server-config.png" alt="US Server Configuration">
 
 <h2>Task 2: Create DevTest Labs and Add VM</h2>
 <p>Create a solution for testing applications using Windows and Linux VMs with scheduled start/shutdown.</p>
@@ -149,16 +172,21 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
     <li>Lab name: Palv913814-lab</li>
     <li>Auto-shutdown: Off</li>
 </ul>
-<img src="images/devtest-lab.png" alt="DevTest Lab">
+<img width="975" height="529" alt="image" src="https://github.com/user-attachments/assets/c9bc652a-3d8d-4c3a-8f58-30877b342fc7" />
+<img width="975" height="526" alt="image" src="https://github.com/user-attachments/assets/16018b38-74c0-4377-ae93-0b81fb895aba" />
+
+
 
 <h3>Step 2: Add Azure VM to Lab</h3>
 <ul>
     <li>Base VM: Windows Server 2022 Datacenter</li>
     <li>VM Name: Palv913814-VM</li>
 </ul>
-<img src="images/devtest-vm.png" alt="VM in DevTest Lab">
+<img width="975" height="527" alt="image" src="https://github.com/user-attachments/assets/4ac89657-642a-429e-8276-6307366c91a6" />
+
 
 <h3>Step 3: Connect to VM</h3>
 <p>Login using RDP or portal access to verify VM availability.</p>
-<img src="images/connect-vm.png" alt="Connect to VM">
+<img width="975" height="527" alt="image" src="https://github.com/user-attachments/assets/7906567b-d4b3-4501-8fbb-ebe8e575a2dc" />
+
 

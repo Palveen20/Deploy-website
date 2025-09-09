@@ -43,23 +43,114 @@ This project demonstrates deploying Linux web servers in multiple regions on Mic
 
 <h2>Azure VM Deployment Steps</h2>
 
-1. **Create Resource Groups**
-   - Canada: `Palv913814-Canada-Resource-Group`
-   - U.S.: `Palv913814-US-Resource-Group`
+<h2>Task 1: Deploy Website using Azure</h2>
+<p>As the Azure administrator, your company has requested you deploy a website using Azure. You are to deploy two (2) Linux servers in the U.S. region and two (2) Linux servers in the Canada region.</p>
 
-2. **Create Virtual Machines**
-   - VM Names: `Palv913814-ca-server1`, `Palv913814-ca-server2`
-   - VM Names: `Palv913814-us-server1`, `Palv913814-us-server2`
-   - Ubuntu Server image, SSH enabled, default size
-   - Public IP addresses assigned
+<h3>Step 1: Use the Azure Pricing Calculator</h3>
+<p>Before you begin, ensure that you have reviewed the Azure for students’ registration document and signed up for the Azure for Students Credit.</p>
 
-3. **Connect via SSH**
-   - Use PuTTY to connect to each VM using public IP
-   - Username: `xx-user`, Password: your password
+<h4>Virtual Machines (VMs)</h4>
+<p>A Virtual Machine is like a pretend computer that lives inside the cloud. You don’t need real hardware; Azure provides one that works online.</p>
+<div class="example"><strong>Example:</strong> Run a website without buying a physical server.</div>
 
-4. **Install Apache Web Server**
-   ```bash
-   sudo apt update
-   sudo apt install apache2 -y
-   sudo systemctl start apache2
-   sudo systemctl enable apache2
+<h4>App Service</h4>
+<p>Azure App Service hosts your web or mobile apps and scales automatically based on traffic.</p>
+<div class="example"><strong>Example:</strong> Host a blog or online shop with automatic updates.</div>
+
+<h4>Azure Functions</h4>
+<p>Serverless compute service that executes code on-demand.</p>
+<div class="example"><strong>Example:</strong> Send an email when a user signs up without running a full server.</div>
+
+<h4>Storage Accounts</h4>
+<p>Online storage for files, backups, and data.</p>
+<div class="example"><strong>Example:</strong> Store thousands of photos securely.</div>
+
+<h4>Azure Cosmos DB</h4>
+<p>Global, fast, and scalable database.</p>
+<div class="example"><strong>Example:</strong> Multiplayer game with data synchronized worldwide.</div>
+
+<h4>Azure SQL Database</h4>
+<p>Cloud version of SQL Server for structured data.</p>
+<div class="example"><strong>Example:</strong> Online store keeping track of products and orders.</div>
+
+<img src="images/azure-pricing-calculator.png" alt="Azure Pricing Calculator">
+
+<h3>Step 2: Sign in to Azure</h3>
+<p>Sign in with your triOS student ID at <a href="https://portal.azure.com" target="_blank">Azure Portal</a></p>
+<img src="images/azure-sign-in.png" alt="Azure Sign-in">
+
+<h3>Step 3: Create Resource Groups and Virtual Machines</h3>
+
+<h4>Canada Region VMs</h4>
+<ul>
+    <li>Subscription: Azure for Students</li>
+    <li>Resource group: Palv913814-Canada-Resource-Group</li>
+    <li>VM Names: Palv913814-ca-server1, Palv913814-ca-server2</li>
+    <li>Region: Canada</li>
+    <li>OS: Ubuntu Server</li>
+    <li>Ports: SSH (22)</li>
+    <li>Disk: Standard SSD</li>
+    <li>Networking/Management/Monitoring: Default</li>
+</ul>
+<img src="images/canada-vm.png" alt="Canada VMs">
+
+<h4>U.S. Region VMs</h4>
+<ul>
+    <li>Subscription: Azure for Students</li>
+    <li>Resource group: Palv913814-US-Resource-Group</li>
+    <li>VM Names: Palv913814-us-server1, Palv913814-us-server2</li>
+    <li>Region: U.S.</li>
+    <li>OS: Ubuntu Server</li>
+    <li>Ports: SSH (22)</li>
+    <li>Disk: Standard SSD</li>
+    <li>Networking/Management/Monitoring: Default</li>
+</ul>
+<img src="images/us-vm.png" alt="US VMs">
+
+<h3>Step 4: Configure the Servers</h3>
+
+<h4>Canada Servers</h4>
+<ul>
+    <li>Note Public IP addresses</li>
+    <li>Open firewall for HTTP port 80</li>
+    <li>Connect using SSH (PuTTY)</li>
+    <li>Install Apache</li>
+    <li>Create a webpage with your name and student ID (text red)</li>
+    <li>Open firewall for HTTPS port 443</li>
+</ul>
+<img src="images/canada-server-config.png" alt="Canada Server Configuration">
+
+<h4>U.S. Servers</h4>
+<ul>
+    <li>Note Public IP addresses</li>
+    <li>Open firewall for HTTP port 80</li>
+    <li>Connect using SSH (PuTTY)</li>
+    <li>Install Apache</li>
+    <li>Create a webpage with your name and student ID (text green)</li>
+    <li>Open firewall for HTTPS port 443</li>
+</ul>
+<img src="images/us-server-config.png" alt="US Server Configuration">
+
+<h2>Task 2: Create DevTest Labs and Add VM</h2>
+<p>Create a solution for testing applications using Windows and Linux VMs with scheduled start/shutdown.</p>
+
+<h3>Step 1: Create DevTest Lab</h3>
+<ul>
+    <li>Subscription: Azure for Students</li>
+    <li>Resource group: Palv913814-devtest-resource-group</li>
+    <li>Lab name: Palv913814-lab</li>
+    <li>Auto-shutdown: Off</li>
+</ul>
+<img src="images/devtest-lab.png" alt="DevTest Lab">
+
+<h3>Step 2: Add Azure VM to Lab</h3>
+<ul>
+    <li>Base VM: Windows Server 2022 Datacenter</li>
+    <li>VM Name: Palv913814-VM</li>
+</ul>
+<img src="images/devtest-vm.png" alt="VM in DevTest Lab">
+
+<h3>Step 3: Connect to VM</h3>
+<p>Login using RDP or portal access to verify VM availability.</p>
+<img src="images/connect-vm.png" alt="Connect to VM">
+
